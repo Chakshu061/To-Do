@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow: hidden;
+    background: linear-gradient(135deg, #4ab1ff, #2d5cff);
+    overflow: hidden;
+}
+
+.wrapper{
+    background: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 28px 0 30px;
+    max-width: 500px;
+    margin: 13px auto;
+}
+
+.task-input{
+    height: 52px;
+    padding: 0 25px;
+    position: relative;
+}
+
+.task-input input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 0 20px 0 53px;
+}
+
+.task-input input::placeholder{
+    color: #bfbfbf;
+}
+
+.task-input img{
+    width:25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translate(17px, -50%);    
+}
+
+.controls{
+    padding: 18px 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.controls, li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filters span{
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 17px;
+}
+
+.filters span:first-child{
+    margin-left: 0;
+}
+
+.filters span.active{
+    color: #3c87ff;
+
+}
+
+.controls .clear-btn{
+    outline: none;
+    border: none;
+    background: #3c87ff;
+    padding: 7px 13px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.task-box{
+    margin: 20px 25px;
+}
+
+.task-box .task{
+    list-style: none;
+    font-size: 17px;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.filters span:last-child{
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.task-box label{
+    display: flex;
+}
+
+.task label input{
+    margin-top: 6px;
+    margin-right: 12px;
+     
+}
